@@ -30,6 +30,8 @@ function day(event) {
         let humidity = document.querySelector("#humidity");
         let currentHumidity = response.data.main.humidity;
         humidity.innerHTML = `Humidity: ${Math.round(currentHumidity)}%`;
+        let imageIcon = document.querySelector("#image");
+        imageIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 });
 }
 
@@ -79,6 +81,8 @@ function coords(position) {
         let humidity = document.querySelector("#humidity");
         let currentHumidity = response.data.main.humidity;
         humidity.innerHTML = `Humidity: ${Math.round(currentHumidity)}%`;
+        let imageIcon = document.querySelector("#image");
+        imageIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
       })
 
 }
