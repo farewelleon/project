@@ -46,15 +46,19 @@ h4 {
 }
 
 .input_text {
-    width: 80%;
+    width: 85%;
     margin-bottom: 20px;
     padding: 7px;
 }
 
 .input_submit {
     height: 40px;
+    width: 14%;
 }
 
+#weather::first-letter {
+    text-transform: capitalize;
+}
 
 ul {
     list-style-type: none;

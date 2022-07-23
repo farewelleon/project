@@ -25,19 +25,19 @@
         </div>
         <form>
             <input autocomplete="off" class="input_text" id="city_input" type="text" placeholder="Type city...">
-            <input class="input_submit" type="submit">
+            <input class="input_submit" type="submit" value="Search">
         </form>
         <div class="main_block">
-            <h2 id="currentCity">Kyiv, Ukraine</h2>
-            <h3>Wednesday 14:38</h3>
-            <h3 id="weather">Sunny</h3>
+            <h2 id="currentCity"></h2>
+            <h3 id="time"></h3>
+            <h3 id="weather"></h3>
             
         </div>
         <div class="row" id="currentlyC">
-            <img id="image" src="img/cloudy.png" alt="">
+            <img id="image" src="" alt="">
             <span><h6 id="currentTemperature">20</h6></span><span><a class="celsius" href="">°C </a></span><span>|</span><span><a class="fahrenheit" href=""> °F</a></span>
-            <span class="col-sm wind_column"><h5 id="humidity">Humidity: 32%</h5>
-                <h5 id="wind">Wind: 10km/h</h5></span>
+            <span class="col-sm wind_column"><h5>Humidity: <span id="humidity"></span>%</h5>  
+                <h5>Wind: <span id="wind"></span> km/h</h5>
         </div>
         <div class="row other_days">
             <div class="col-sm border_days">
