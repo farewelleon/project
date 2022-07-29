@@ -5,10 +5,22 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: white;
+    border: 3px solid gray;
+    border-radius: 10px;
+    
+}
+
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-forecast-date {
+    font-size: 16px;
 }
 
 .popularCities {
@@ -39,12 +51,6 @@ h4 {
     font-size: 20px;
 }
 
-.container {
-    border: 3px solid gray;
-    border-radius: 10px;
-    
-}
-
 .input_text {
     width: 85%;
     margin-bottom: 20px;
@@ -69,9 +75,22 @@ h4 {
     text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.weather-forecast-temperatures {
+    font-size: 17px;
+}
+
+.weather-forecast-temperature-min {
+    color: gray;
+    opacity: 0.6;
+}
+
+.weather-forecast-temperature-max {
+    color: darkcyan;
+}
+
+.weather-forecast-date {
+    font-size: 16px;
+    opacity: 0.6;
 }
 
 .main_block {
@@ -101,9 +120,10 @@ ul {
     margin-top: 30px;
 }
 
-img {
+#image {
     width: 110px;
     height: 100px;
+    padding-left: 10px;
 }
 
 #currentlyC h6 {
@@ -112,9 +132,6 @@ img {
     padding-left: 10px;
 }
 
-img {
-    padding-left: 10px;
-}
 
 .celsius {
     margin-right: 5px;
