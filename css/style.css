@@ -5,12 +5,13 @@ body {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 650px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: white;
     border: 3px solid gray;
     border-radius: 10px;
+    padding-bottom: 20px;
     
 }
 
