@@ -93,31 +93,31 @@ function handleSubmit(event) {
 let submitButton = document.querySelector("form");
 submitButton.addEventListener("submit", handleSubmit);
 
-function fahrenheit(event) {
-    event.preventDefault();
-    let newDegrees = document.querySelector("#currentTemperature");
-    clickCelsius.classList.remove("active");
-    clickFahrenheit.classList.add("active");
-    let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
-    newDegrees.innerHTML = Math.round(fahrenheiTemperature);
-};
+// function fahrenheit(event) {
+//     event.preventDefault();
+//     let newDegrees = document.querySelector("#currentTemperature");
+//     clickCelsius.classList.remove("active");
+//     clickFahrenheit.classList.add("active");
+//     let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+//     newDegrees.innerHTML = Math.round(fahrenheiTemperature);
+// };
 
-let celsiusTemperature = null;
+// let celsiusTemperature = null;
 
-let clickFahrenheit = document.querySelector(".fahrenheit");
-clickFahrenheit.addEventListener("click", fahrenheit);
+// let clickFahrenheit = document.querySelector(".fahrenheit");
+// clickFahrenheit.addEventListener("click", fahrenheit);
 
 
-function celsius(event) {
-    event.preventDefault();
-    let newDegrees = document.querySelector("#currentTemperature");
-    clickCelsius.classList.add("active");
-    clickFahrenheit.classList.remove("active");
-    newDegrees.innerHTML = Math.round(celsiusTemperature);
-}
+// function celsius(event) {
+//     event.preventDefault();
+//     let newDegrees = document.querySelector("#currentTemperature");
+//     clickCelsius.classList.add("active");
+//     clickFahrenheit.classList.remove("active");
+//     newDegrees.innerHTML = Math.round(celsiusTemperature);
+// }
 
-let clickCelsius = document.querySelector(".celsius");
-clickCelsius.addEventListener("click", celsius);
+// let clickCelsius = document.querySelector(".celsius");
+// clickCelsius.addEventListener("click", celsius);
 
 search("New York");
 
