@@ -149,9 +149,41 @@ function coords(position) {
         imageIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
         let dateElement = document.querySelector("#time");
         dateElement.innerHTML = formatDate(response.data.dt * 1000);
+        getForecast(response.data.coord);
       })
-
 }
+
+function parisFunction(event) {
+    event.preventDefault();
+    search("Paris");
+}
+
+let paris = document.querySelector("#paris");
+paris.addEventListener('click', parisFunction);
+
+function berlinFunction(event) {
+    event.preventDefault();
+    search("Berlin");
+}
+
+let berlin = document.querySelector("#berlin");
+berlin.addEventListener('click', berlinFunction);
+
+function lvivFunction(event) {
+    event.preventDefault();
+    search("lviv");
+}
+
+let lviv = document.querySelector("#lviv");
+lviv.addEventListener('click', lvivFunction);
+
+function londonFunction(event) {
+    event.preventDefault();
+    search("london");
+}
+
+let london = document.querySelector("#london");
+london.addEventListener('click', londonFunction);
 
 function showCurrentCity(event) {
     event.preventDefault();
