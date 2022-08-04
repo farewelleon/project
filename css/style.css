@@ -11,11 +11,15 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: white;
-    border: 3px solid gray;
+    border: 3px solid black;
     border-radius: 10px;
     padding-bottom: 20px;
     margin-top: 18%;
-    
+    background: linear-gradient(white, #00BFFF)
+}
+
+.weather-forecast-date {
+    color: black;
 }
 
 .weather-forecast {
@@ -93,7 +97,7 @@ h4 {
 }
 
 .weather-forecast-temperature-max {
-    color: darkcyan;
+    color: 	#CD5C5C;
 }
 
 .weather-forecast-date {
@@ -108,7 +112,7 @@ h4 {
 
 .main_block {
     font-size: 40px;
-    color: gray;
+    color: black;
 }
 
 .main_block h3 {
@@ -136,7 +140,7 @@ h4 {
 
 #currentlyC h6 {
     font-size: 60px;
-    color:darkcyan;
+    color:	#CD5C5C;
     padding-left: 10px;
 }
 
