@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: black;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .container {
@@ -12,6 +14,7 @@ body {
     border: 3px solid gray;
     border-radius: 10px;
     padding-bottom: 20px;
+    margin-top: 18%;
     
 }
 
@@ -32,19 +35,15 @@ body {
 }
 
 a {
-    color: orange
+    color: black
 }
 
 a:hover {
-    color:aqua;
+    color:orange;
 }
 
 form {
     margin-top: 6px;
-}
-
-.margin_top_container {
-    margin-top: 20px;
 }
 
 h4 {
@@ -68,7 +67,7 @@ h4 {
 }
 
 #currentlyC .active {
-    color: gray;
+    color: black;
     cursor: default;
 }
 
@@ -76,12 +75,20 @@ h4 {
     text-decoration: none;
 }
 
+.humidity {
+    color: black;
+}
+
+.wind {
+    color: black;
+}
+
 .weather-forecast-temperatures {
     font-size: 17px;
 }
 
 .weather-forecast-temperature-min {
-    color: gray;
+    color: black;
     opacity: 0.6;
 }
 
@@ -144,4 +151,8 @@ h4 {
 
 .git {
     text-align: center;
+}
+
+.footer {
+    color: #40E0D0;
 }
